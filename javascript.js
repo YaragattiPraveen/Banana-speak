@@ -12,5 +12,8 @@ translateBtn.addEventListener('click',() =>{
         var translatedText = data.contents.translated;
         showOutput.innerHTML = translatedText;
     })
-    .catch(error => console.log(error.message))
+    .catch(error => {
+        alert("Something wrong with server! try again after some time.")    
+        console.log(error.message)
+    })
 })
