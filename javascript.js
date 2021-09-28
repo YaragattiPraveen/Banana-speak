@@ -6,7 +6,7 @@ let showOutput = document.querySelector('#userOutput');
 // Adding a event listener to a given button
 translateBtn.addEventListener('click',() =>{
     // Making a base url to fetch data 
-    var baseURL = `https://api.funtranslations.com/translate/emoji.json?text=${userInput.value}`;    
+    var baseURL = `https://api.funtranslations.com/translate/minion.json?text=${userInput.value}`;    
     // To get translated text we use api fetch method 
 
     fetch(baseURL)
